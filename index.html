@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Longxu Dou @ Sea AI Lab </title>
+
+    <meta name="author" content="Jon Barron">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="./images/sea.png" />
+</head>
+
+<body>
+    <table
+        style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p style="text-align:center">
+                                        <name>Longxu Dou 窦隆绪</name>
+                                    </p>
+                                    <p>
+                                            I am a Research Scientist at <a href="https://github.com/sail-sg">Sea AI Lab</a>, based on Singapore, working on
+
+                                            <ul>
+                                                <li>Terminal Agent (<a href="https://terminal-agent.github.io/blog/workflow/">Reptile</a>)</li>
+                                                <li>Multilingual LLM (<a href="https://sea-sailor.github.io/blog/sailor1/">Sailor</a>/<a href="https://sea-sailor.github.io/blog/sailor2/">Sailor2</a>)</li>
+                                            </ul>
+
+                                    <strong>Research Interests:</strong>
+                                            <ul>
+                                                <li><strong>Autonomous Agent:</strong> human-in-the-loop learning, agentic mid-training, agentic RL training</li>
+                                                <li><strong>Large Language Model:</strong> continual pretraining, data mixture, multilingual expansion</li>
+                                            </ul>
+                                    </p>
+                                    <p>
+                                        I earned my Ph.D. and Bachelor's degree in Computer Science from Harbin
+                                        Institute of Technology advised by Professor Wanxiang Che.
+                                        I worked as a research intern at Microsoft Research Asia with Dr.Jian-Guang Lou
+                                        and at National University of Singapore with Professor Min-Yen Kan.
+                                    </p>
+
+                                    <p style="text-align:center">
+                                        <a href="mailto:doulongxu@gmail.com">Email</a> &nbsp/&nbsp
+                                        <a href="https://scholar.google.com/citations?user=flgPmvkAAAAJ&hl=en">Google
+                                            Scholar</a>
+                                        &nbsp/&nbsp
+                                        <a href="https://www.linkedin.com/in/longxu-dou-6b167410a/">LinkedIn</a>
+                                        &nbsp/&nbsp
+                                       <a href="data/slides/Longxu_Dou_Resume.pdf">Resume</a>
+                                        &nbsp/&nbsp
+                                        <a href="https://github.com/longxudou/">Github</a> &nbsp/&nbsp
+                                        <a href="https://x.com/LongxuDou">Twitter</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%">
+                                    <a href="images/longxu-picture.jpg"><img
+                                            style="width:80%;max-width:80%;border-radius:50%;" alt="profile photo"
+                                            src="images/longxu-picture.jpg" class="hoverZoomLink"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <heading>Recent Research Projects</heading>
+                        (# indicates mentorship, * indicates equal contribution.)
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+    <table
+                                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <img src='images/reptile_v1_result.png' width="200" mar>
+                                            </div>
+                                        </td>
+
+                                        <td style="padding:20px;width:75%;vertical-align:middle">
+                                            <a href="https://terminal-agent.github.io/blog/workflow/">
+                                                <papertitle>Reptile: Terminal-Agent with Human-in-the-Loop Learning
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>Longxu Dou*</strong>, Cunxiao Du*, Shenggui Li*, Tianduo Wang,
+                                            Tianjie Zhang, Tianyu Liu, Xianwei Chen, Chenxia Tang, Yuanheng Zhao, Min Lin
+                                            <br>
+                                            <em>Project</em>, 2025
+                                            <a href="https://github.com/terminal-agent/reptile">
+                                                <img src="https://img.shields.io/github/stars/terminal-agent/reptile?style=social"
+                                                    style="vertical-align: middle;" /></a>
+                                                  <font color="red"><strong>
+                                 <br> Work in progress — exciting updates coming soon!
+
+                                </strong></font>
+                                            <br>
+                                            <p>
+                                                Reptile is a Terminal Agent that enables interaction with an LLM agent directly in your terminal.
+                                                The agent can execute any command or custom CLI tool to accomplish tasks, and users can define their own tools and commands for the agent to utilize.
+                                                Compared with other CLI agents (e.g., Claude Code and Mini SWE-Agent), Reptile stands out for the following reasons:
+                                                <br>• Terminal-only beyond Bash-only: Simple and stateful execution, which is more efficient than bash-only (you don’t need to specify the environment in every command). It doesn’t require the complicated MCP protocol—just a naive bash tool under the REPL protocol.
+                                                <br>• Human-in-the-Loop Learning: Users can inspect every step and provide prompt feedback, i.e., give feedback under the USER role or edit the LLM generation under the ASSISTANT role.
+                                            </p>
+                             <font color="red"><strong>After training with 200 interactions, this improves Devstral-2505-22B performance:
+                                <br>• Terminal-bench: 11.3% → 18.9%
+                                <br>• SWE-Bench-Verified: 18.6% → 32.8%
+
+                                </strong></font>
+                                            </font>
+                                        </td>
+                                    </tr>
+
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <img src='images/sailor2_chat_perf.jpeg' width="200" mar>
+                                    </div>
+                                </td>
+
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/2502.12982">
+                                        <papertitle>Sailor2: Sailing in South-East Asia with Inclusive Multilingual LLMs
+                                        </papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Longxu Dou*</strong>, Qian Liu*, Fan Zhou*, Changyu Chen*, Zili Wang, Ziqi
+                                    Jin, Zichen
+                                    Liu, Tongyao Zhu, Cunxiao Du, Penghui Yang, Haonan Wang, Jiaheng Liu, Yongchi Zhao,
+                                    Xiachong
+                                    Feng, Xin Mao, Man Tsung Yeung,
+<!--                                    Kunat Pipatanakul, Fajri Koto, Min Si Thu, Hynek Kydlíček, Zeyi Liu, Qunshu Lin,-->
+<!--                                    Sittipong-->
+<!--                                    Sripaisarnmongkol, Kridtaphad Sae-Khow, Nirattisai Thongchim, Taechawat Konkaew,-->
+<!--                                    Narong-->
+<!--                                    Borijindargoon, Anh Dao, Matichon Maneegard, Phakphum Artkaew, Zheng-Xin Yong, Quan-->
+<!--                                    Nguyen,-->
+<!--                                    Wannaphong Phatthiyaphaibun, Hoang H. Tran, Mike Zhang, Shiqi Chen,-->
+<!--                                    Tianyu Pang, Chao Du, Xinyi Wan, Wei Lu, Min Lin-->
+                                                  Sailor2 Team
+                                    <br>
+                                    <em>Report</em>, 2025
+                                    <a href="https://github.com/sail-sg/sailor2">
+                                        <img src="https://img.shields.io/github/stars/sail-sg/sailor2?style=social"
+                                            style="vertical-align: middle;" />
+                                    </a>
+                                    <a href="data/sailor/Sailor2_Share.pdf">
+                                        <strong>Slides</strong>
+                                    </a>
+                                    <br>
+                                    <p>
+                                        Sailor2 is a community-driven project delivering state-of-the-art multilingual
+                                        language
+                                        models in three scales - 1B, 8B, and 20B parameters. Released under the Apache
+                                        2.0 license,
+                                        these models specialize in South-East Asian (SEA) languages, making advanced
+                                        models more
+                                        accessible across the region.
+                                        Building upon the foundation of Qwen2.5 , Sailor2 is continually pre-trained
+                                        over 500B
+                                        high-quality tokens to support 15 languages, including English, Chinese,
+                                        Burmese, Cebuano,
+                                        Ilocano, Indonesian, Javanese, Khmer, Lao, Malay, Sundanese, Tagalog, Thai,
+                                        Vietnamese,
+                                        Waray.
+                                    </p>
+                                    <font color="red"><strong>
+                                        <br>• Sailor2-20B-Chat achieves a nearly 50% win rate against
+                                            GPT-4o-0806 on
+                                            SeaWildBench, showcasing GPT-4o-level performance in local chat scenarios on
+                                            South-East
+                                            Asian Languages.
+                                        <br>• Over 300K downloads since released
+                                    </strong></font>
+                                </td>
+                            </tr>
+
+
+                            <table
+                                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <img src='images/sailor1_pipeline.png' width="200" mar>
+                                            </div>
+                                        </td>
+
+                                        <td style="padding:20px;width:75%;vertical-align:middle">
+                                            <a href="https://arxiv.org/pdf/2404.03608">
+                                                <papertitle>Sailor: Open Language Models for South-East Asia
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>Longxu Dou*</strong>, Qian Liu*, Guangtao Zeng, Jia Guo, Jiahui
+                                            Zhou, Xin Mao, Ziqi
+                                            Jin, Wei Lu, Min Lin
+                                            <br>
+                                            <em>EMNLP Demo</em>, 2024
+                                            <a href="https://github.com/sail-sg/sailor-llm">
+                                                <img src="https://img.shields.io/github/stars/sail-sg/sailor-llm?style=social"
+                                                    style="vertical-align: middle;" /></a>
+                                            <a href="data/sailor/Sailor1_Share.pdf">
+                                                <strong>Slides</strong>
+                                            </a>
+                                            <br>
+                                            <p>
+                                                Sailor is a family of open language models ranging from 0.5B to 14B
+                                                parameters, tailored
+                                                for South-East Asian (SEA) languages. These models are continually
+                                                pre-trained from
+                                                Qwen1.5, a great language model for multilingual use cases. From
+                                                Qwen1.5, Sailor models
+                                                accept 200B to 400B tokens, primarily covering the languages of English,
+                                                Chinese,
+                                                Vietnamese, Thai, Indonesian, Malay, and Lao. The training leverages
+                                                several techniques,
+                                                including BPE dropout for improving the model robustness, aggressive
+                                                data cleaning and
+                                                deduplication, and small proxy models to optimize data mixture.
+                                            </p>
+                                            <font color="red"><strong>
+                                                <br>• Over 200K downloads since released.</strong>
+                                            </font>
+                                        </td>
+                                    </tr>
+
+
+                                    <table
+                                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                                    <div class="one">
+                                                        <img src='images/sailcraft.png' width="200" mar>
+                                                    </div>
+                                                </td>
+                                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                                    <a href="https://github.com/sail-sg/sailcraft">
+                                                        <papertitle>SailCraft: Data Toolkit for Sailor Language Models
+                                                        </papertitle>
+                                                    </a>
+                                                    <br>
+                                                    <strong>Longxu Dou</strong>
+                                                    <br>
+                                                    <em>Tool</em>, 2024
+                                                    <a href="https://github.com/sail-sg/sailcraft">
+                                                        <img src="https://img.shields.io/github/stars/sail-sg/sailcraft?style=social"
+                                                            style="vertical-align: middle;" /></a>
+                                                    <br>
+
+                                                    <p>
+                                                        The full data processing script used in developing our Sailor
+                                                        models. The repo
+                                                        provides an end-to-end data processing pipeline for LLM
+                                                        training.
+                                                        With this codebase, you can clean your own dataset with:
+                                                        (1) Get filtered data counts after each processing stage.
+                                                        (2) Easily configure language-specific cleaning rules (we
+                                                        support Arabic, Bengali,
+                                                        Catalan, Spanish, Basque, French, Hindi, Portuguese, Urdu, and
+                                                        optimize for English,
+                                                        Indonesian, Vietnamese, Chinese, Thai, Lao, Malay).
+                                                        (3) Investigate what data was removed at each processing stage.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+
+                                            <table
+                                                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                                            <div class="one">
+                                                                <img src='images/iclr_2025_regmix.jpg' width="200" mar>
+                                                            </div>
+                                                        </td>
+                                                        <td style="padding:20px;width:75%;vertical-align:middle">
+                                                            <a href="https://arxiv.org/pdf/2407.01492">
+                                                                <papertitle>RegMix: Data Mixture as Regression for
+                                                                    Language Model
+                                                                    Pre-training
+                                                                </papertitle>
+                                                            </a>
+                                                            <br>
+                                                            Qian Liu, Xiaosen Zheng, Niklas Muennighoff, Guangtao Zeng,
+                                                            <strong>Longxu
+                                                                Dou</strong>, Tianyu Pang, Jing Jiang, Min Lin
+                                                            <br>
+                                                            <em>ICLR <font color="red"><strong>(Spotlight)</strong>
+                                                                </font>
+                                                            </em>, 2025
+                                                            <a href="https://github.com/sail-sg/regmix">
+                                                                <img src="https://img.shields.io/github/stars/sail-sg/regmix?style=social"
+                                                                    style="vertical-align: middle;" />
+                                                            </a>
+                                                            <br>
+                                                            <p>
+                                                                The data mixture for large language model pre-training
+                                                                significantly impacts
+                                                                performance, yet how to determine an effective mixture
+                                                                remains unclear. We
+                                                                propose RegMix to automatically identify a
+                                                                high-performing data mixture by
+                                                                formulating it as a regression task. RegMix trains many
+                                                                small models on
+                                                                diverse data mixtures, uses regression to predict
+                                                                performance of unseen
+                                                                mixtures, and applies the best predicted mixture to
+                                                                train a large-scale
+                                                                model with orders of magnitude more compute.
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <table
+                                                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:20px;width:25%;vertical-align:middle">
+                                                                    <div class="one">
+                                                                        <img src='images/nips2024_scaling_vocab.jpg'
+                                                                            width="200" mar>
+                                                                    </div>
+                                                                </td>
+                                                                <td
+                                                                    style="padding:20px;width:75%;vertical-align:middle">
+                                                                    <a href="https://arxiv.org/pdf/2407.13623">
+                                                                        <papertitle>Scaling Laws with Vocabulary: Larger
+                                                                            Models Deserve Larger
+                                                                            Vocabularies
+                                                                        </papertitle>
+                                                                    </a>
+                                                                    <br>
+                                                                    Chaofan Tao, Qian Liu#, <strong>Longxu
+                                                                        Dou#</strong>, Niklas Muennighoff,
+                                                                    Zhongwei
+                                                                    Wan, Ping Luo, Min Lin, Ngai Wong
+                                                                    <br>
+                                                                    <em>NeurIPS</em>, 2024
+                                                                    <a
+                                                                        href="https://github.com/sail-sg/scaling-with-vocab">
+                                                                        <img src="https://img.shields.io/github/stars/sail-sg/scaling-with-vocab?style=social"
+                                                                            style="vertical-align: middle;" />
+                                                                    </a>
+                                                                    <br>
+                                                                    <p>
+                                                                        Research on scaling large language models (LLMs)
+                                                                        has primarily focused on
+                                                                        model parameters and training data size,
+                                                                        overlooking the role of vocabulary
+                                                                        size. We investigate how vocabulary size impacts
+                                                                        LLM scaling laws by
+                                                                        training models ranging from 33M to 3B
+                                                                        parameters on up to 500B characters
+                                                                        with various vocabulary configurations. We
+                                                                        propose three complementary
+                                                                        approaches for predicting the compute-optimal
+                                                                        vocabulary size: IsoFLOPs
+                                                                        analysis, derivative estimation, and parametric
+                                                                        fit of the loss function.
+                                                                        Our approaches converge on the conclusion that
+                                                                        the optimal vocabulary size
+                                                                        depends on the compute budget, with larger
+                                                                        models requiring larger
+                                                                        vocabularies. </p>
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <table
+                                                                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="padding:0px">
+                                                                            <br>
+                                                                            <p
+                                                                                style="text-align:right;font-size:small;">
+                                                                                Design and source code from <a
+                                                                                    href="https://github.com/jonbarron/jonbarron_website">Jon
+                                                                                    Barron</a>.
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                </td>
+            </tr>
+    </table>
+</body>
+
+</html>
