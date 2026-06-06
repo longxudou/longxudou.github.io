@@ -4,13 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Longxu Dou @ Sea AI Lab </title>
+    <title>Longxu Dou </title>
 
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" type="image/png" href="./images/sea.png" />
 </head>
 
 <body>
@@ -25,25 +23,14 @@
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p style="text-align:center">
-                                        <name>Longxu Dou 窦隆绪</name>
+                                        <name>Longxu Dou</name>
                                     </p>
                                     <p>
-                                            I am a Research Scientist at <a href="https://github.com/sail-sg">Sea AI Lab</a>, based on Singapore, working on
-
-                                            <ul>
-                                                <li>Terminal Agent (<a href="https://terminal-agent.github.io/blog/workflow/">Reptile</a>)</li>
-                                                <li>Multilingual LLM (<a href="https://sea-sailor.github.io/blog/sailor1/">Sailor</a>/<a href="https://sea-sailor.github.io/blog/sailor2/">Sailor2</a>)</li>
-                                            </ul>
-
-                                    <strong>Research Interests:</strong>
-                                            <ul>
-                                                <li><strong>Autonomous Agent:</strong> human-in-the-loop learning, agentic mid-training, agentic RL training</li>
-                                                <li><strong>Large Language Model:</strong> continual pretraining, data mixture, multilingual expansion</li>
-                                            </ul>
+                                            I am a researcher at Tencent Hunyuan.
                                     </p>
                                     <p>
-                                        I earned my Ph.D. and Bachelor's degree in Computer Science from Harbin
-                                        Institute of Technology advised by Professor Wanxiang Che.
+                                         I was a researcher at Sea AI Lab (2023-2025). 
+                                        <!-- I earned my PhD and Bachelor from Harbin Institute of Technology. -->
 
                                     </p>
 
@@ -71,9 +58,7 @@
                 <tbody>
                 <tr>
                     <td style="padding:20px;width:100%;vertical-align:middle">
-                        <heading>Recent Research Projects</heading>
-                        (# indicates mentorship, * indicates equal contribution.)
-
+                        <heading>Research Projects</heading> 
                     </td>
                 </tr>
                 </tbody>
@@ -91,7 +76,7 @@
 
                                         <td style="padding:20px;width:75%;vertical-align:middle">
                                             <a href="https://terminal-agent.github.io/blog/workflow/">
-                                                <papertitle>Reptile: Terminal-Agent with Human-in-the-Loop Learning
+                                                <papertitle>Reptile: Terminal Agent with Human-in-the-Loop Learning
                                                 </papertitle>
                                             </a>
                                             <br>
@@ -102,23 +87,19 @@
                                             <a href="https://github.com/terminal-agent/reptile">
                                                 <img src="https://img.shields.io/github/stars/terminal-agent/reptile?style=social"
                                                     style="vertical-align: middle;" /></a>
-                                                  <font color="red"><strong>
-                                 <br> Work in progress — exciting updates coming soon!
-
-                                </strong></font>
                                             <br>
                                             <p>
-                                                Reptile is a Terminal Agent that enables interaction with an LLM agent directly in your terminal.
-                                                The agent can execute any command or custom CLI tool to accomplish tasks, and users can define their own tools and commands for the agent to utilize.
+                                                <!-- Reptile is a Terminal Agent that enables interaction with an LLM agent directly in your terminal.
+                                                The agent can execute any command or custom CLI tool to accomplish tasks, and users can define their own tools and commands for the agent to utilize. -->
                                                 Compared with other CLI agents (e.g., Claude Code and Mini SWE-Agent), Reptile stands out for the following reasons:
                                                 <br>• Terminal-only beyond Bash-only: Simple and stateful execution, which is more efficient than bash-only (you don’t need to specify the environment in every command). It doesn’t require the complicated MCP protocol—just a naive bash tool under the REPL protocol.
                                                 <br>• Human-in-the-Loop Learning: Users can inspect every step and provide prompt feedback, i.e., give feedback under the USER role or edit the LLM generation under the ASSISTANT role.
                                             </p>
-                             <font color="red"><strong>After training with 200 interactions, this improves Devstral-2505-22B performance:
+                             <!-- <font color="red"><strong>After training with 200 interactions, this improves Devstral-2505-22B performance:
                                 <br>• Terminal-bench: 11.3% → 18.9%
                                 <br>• SWE-Bench-Verified: 18.6% → 32.8%
 
-                                </strong></font>
+                                </strong></font> -->
                                             </font>
                                         </td>
                                     </tr>
@@ -165,28 +146,22 @@
                                     <br>
                                     <p>
                                         Sailor2 is a community-driven project delivering state-of-the-art multilingual
-                                        language
-                                        models in three scales - 1B, 8B, and 20B parameters. Released under the Apache
-                                        2.0 license,
-                                        these models specialize in South-East Asian (SEA) languages, making advanced
-                                        models more
-                                        accessible across the region.
+                                        language models in three scales - 1B, 8B, and 20B parameters. 
+                                        <!-- Released under the Apache 2.0 license, these models specialize in South-East Asian (SEA) languages, making advanced
+                                        models more accessible across the region. -->
                                         Building upon the foundation of Qwen2.5 , Sailor2 is continually pre-trained
-                                        over 500B
-                                        high-quality tokens to support 15 languages, including English, Chinese,
-                                        Burmese, Cebuano,
-                                        Ilocano, Indonesian, Javanese, Khmer, Lao, Malay, Sundanese, Tagalog, Thai,
-                                        Vietnamese,
-                                        Waray.
+                                        over 500B high-quality tokens to support 15 languages, including English, Chinese,
+                                        Burmese, Cebuano, Ilocano, Indonesian, Javanese, Khmer, Lao, Malay, Sundanese, Tagalog, Thai,
+                                        Vietnamese, Waray.
                                     </p>
-                                    <font color="red"><strong>
+                                    <!-- <font color="red"><strong>
                                         <br>• Sailor2-20B-Chat achieves a nearly 50% win rate against
                                             GPT-4o-0806 on
                                             SeaWildBench, showcasing GPT-4o-level performance in local chat scenarios on
                                             South-East
                                             Asian Languages.
                                         <br>• Over 300K downloads since released
-                                    </strong></font>
+                                    </strong></font> -->
                                 </td>
                             </tr>
 
@@ -211,7 +186,7 @@
                                             Zhou, Xin Mao, Ziqi
                                             Jin, Wei Lu, Min Lin
                                             <br>
-                                            <em>EMNLP Demo</em>, 2024
+                                            <em>Report</em>, 2024
                                             <a href="https://github.com/sail-sg/sailor-llm">
                                                 <img src="https://img.shields.io/github/stars/sail-sg/sailor-llm?style=social"
                                                     style="vertical-align: middle;" /></a>
@@ -234,14 +209,14 @@
                                                 data cleaning and
                                                 deduplication, and small proxy models to optimize data mixture.
                                             </p>
-                                            <font color="red"><strong>
+                                            <!-- <font color="red"><strong>
                                                 <br>• Over 200K downloads since released.</strong>
-                                            </font>
+                                            </font> -->
                                         </td>
                                     </tr>
 
 
-                                    <table
+                                    <!-- <table
                                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                                         <tbody>
                                             <tr>
@@ -279,9 +254,9 @@
                                                         (3) Investigate what data was removed at each processing stage.
                                                     </p>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
 
-
+<!-- 
                                             <table
                                                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                                                 <tbody>
@@ -383,7 +358,7 @@
                                                                         models requiring larger
                                                                         vocabularies. </p>
                                                                 </td>
-                                                            </tr>
+                                                            </tr> -->
 
 
                                                             <table
